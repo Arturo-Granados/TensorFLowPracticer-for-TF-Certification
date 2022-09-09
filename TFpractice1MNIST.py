@@ -1,23 +1,37 @@
-#Setup
+#Import tensorflow
 import tensorflow as tf
 
+#Load MNIST dataset
+mnist = tf.keras.datasets.mnist
 
-#Load dataset
-mnist = tf.keras.dataset.mnsit
-
-#Split data into x and y variables and train and test sets
+#Split data into X and y variables and train and test split
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-#Data normalization
-x_train, y_test = x_train/255.0, x_test/255.0
+#Data standarization
+x_train, x_test = x_train/255.0, x_test/255.0
 
-#Build NN model with keras
+#Define input shape
+input_shape = x_train.shape[1:]
+
+#Create NN model with keras
 model = tf.keras.models.Sequential([
-    tf.keras.layers.Flatten(input_shape = (28,28)),
+    #Flatten layer convert a matrix into vector
+    tf.keras.layers.Flatten(input_shape = input_shape),
+    #First hidden layers
     tf.keras.layers.Dense(128, activation = 'relu'),
-    tf.keras.layes.Dropout(0.2),
-    tf.keras.layers.Dense(10)
+    #Dropout layers
+    tf.keras.layers.Dropout(0.2),
+    #Second dense layers
+    tf.keras.layers.Dense(10, activation = 'softmax')
 ])
 
+#Compile model
+model.compile(optimizer = 'adam',
+              loss = 'sparse_categorical_crossentropy',
+              metrics = ['accuracy'])
 
+#Fit model
+model.fit(x_train, y_train, epochs = 5)
 
+#Model evaluation
+model.evaluate(x_test, y_test, verbose = 2)
