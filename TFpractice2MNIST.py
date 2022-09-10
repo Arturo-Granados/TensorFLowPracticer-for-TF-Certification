@@ -53,7 +53,7 @@ history = model.fit(train_images, train_labels, epochs = 20, validation_data=(te
 #Evluate accuracy
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 
-#MAE values for train and validation data
+#Accuracy values for train and validation data
 accuracy = history.history['accuracy']
 val_accuracy = history.history['val_accuracy']
 
