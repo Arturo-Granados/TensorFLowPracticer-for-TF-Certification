@@ -26,3 +26,18 @@ This short introduction uses Keras to:
 * Make predictions 
 
 [Practice 2](TFpractice2MNIST.py)
+
+
+## Practice 3: Basic text classification 
+
+* Download IMDB dataset
+* Load dataset 
+* Preprocessing data(standardization, tokenization, vectorization)
+* Dataset configuration
+* Create NN model
+* Train model
+* Model evaluation
+* Make predictions 
+* Export the model
+
+[Practice 3](TFpractice3IMDB.py)
