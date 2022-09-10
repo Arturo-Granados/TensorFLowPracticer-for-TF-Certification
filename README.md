@@ -29,7 +29,9 @@ This short introduction uses Keras to:
 
 
 ## Practice 3: Basic text classification 
-
+Development a binary text classification model  with keras, using standardization, tokenization and 
+vectorization techniques getting 87% of accuracy.
+Content:
 * Download IMDB dataset
 * Load dataset 
 * Preprocessing data(standardization, tokenization, vectorization)
