@@ -6,7 +6,7 @@ In this repository are all my practices for the tf certification.
 # Practices
 
 ## Practice 1: TensorFlow 2 quickstart
-Short introduction uses Keras for development a multiclass classifier model(10 classes),
+Short introduction to Keras for development a multiclass classifier model(10 classes),
 using basics preprocessing techniques getting 97 of accuracy 
 * Load a prebuilt dataset.
 * Build a neural network machine learning model that classifies images.
