@@ -45,3 +45,18 @@ vectorization techniques getting 87% of accuracy.
 * Export the model
 
 [Practice 3](TFpractice3IMDB.py)
+
+
+## Practice 4: Basic text classification 
+Development a binary text classification model  with keras, using transfer learning technique to generate 
+embeddings, getting 86% of accuracy.
+
+* Download IMDB dataset
+* Load dataset 
+* Load embedding model
+* Dataset configuration
+* Create NN model
+* Train model
+* Model evaluation
+
+[Practice 4](TFpractice4IMDB.py)
