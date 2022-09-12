@@ -47,7 +47,7 @@ vectorization techniques getting 87% of accuracy.
 [Practice 3](TFpractice3IMDB.py)
 
 
-## Practice 4: Basic text classification 
+## Practice 4: Text classification and transfer learning
 Development a binary text classification model  with keras, using transfer learning technique to generate 
 embeddings, getting 86% of accuracy.
 
