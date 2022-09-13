@@ -60,3 +60,17 @@ embeddings, getting 86% of accuracy.
 * Model evaluation
 
 [Practice 4](TFpractice4IMDB.py)
+
+## Practice 5: Linear regression vs Dnn model
+Development and comparison  two regression models (linear regression and DNN model). 
+
+* Download auto MPG dataset
+* Clean data 
+* Split data into train and test sets
+* Preprocessing data
+* Create models
+* Train models
+* Models evaluation
+* Error analysis
+
+[Practice 5](TFpractice5BasicRegression.py)
