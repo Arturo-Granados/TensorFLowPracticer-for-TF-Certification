@@ -170,9 +170,13 @@ loss, acc = new_model.evaluate(test_images, test_labels, verbose=2)
 print('Restored model, accuracy: {:5.2f}%'.format(100 * acc))
 
 
-
-
-
-
+####################################      conclusison     ####################################
+#There are many ways to seve a model created in with keras, in this practice I'd worked with
+#callbacks.ModelCheckpoint that save the model weights each train epoch in a given dir
+#callbacks.ModelCheckpoint can be set to save the weights each n epochs
+#save.weights to save the weights manually
+#all this aproches just save the weight, they does not save the arquitecture model
+#if you want to save the weights and the arquitecture can be use .save() with saved model and
+#HDF5 format
 
 
